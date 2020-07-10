@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="20 days">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/touchicon.png"/>
+    <!-- Titles -->
+    <title>Mind Over Body • Adam Gethin</title>
+    <meta name="twitter:title" content="Mind Over Body • Adam Gethin">
+    <meta property="og:site_name" content="Adam Gethin" />
+    <meta property="og:title" content="Mind Over Body" />
+    <!-- URL -->
+    <meta property="og:url" content="https://adamgethin.com/works/mindoverbody" />
+    <!-- Thumbnail -->
+    <meta property="og:image" content="https://adamgethin.com/works/mindoverbody/cover.png" />
+    <meta name="twitter:image" content="https://adamgethin.com/works/mindoverbody/cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="The logo for Mind Over Body.">
+    <!-- Description -->
+    <meta name="twitter:description" content="Branding for Mind Over Body, an organisation focused on helping people with negative perceptions of their body image through hosting talks and support groups.">
+    <meta name="description" content="Branding for Mind Over Body, an organisation focused on helping people with negative perceptions of their body image through hosting talks and support groups.">
+    <!-- Type -->
+    <meta name="twitter:site" content="@adamgethin">
+    <meta name="twitter:creator" content="@adamgethin">
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="keywords" content="adam gethin, web design, design, web development, UI design" />
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "CreativeWork",
+            "creator": "Adam Gethin",
+            "sourceOrganization": "Mind Over Body",
+            "image": "/works/mindoverbody/cover.png",
+            "name": "Branding"
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="button" role="button" title="Go back">&larr; Go back</a>
+        <div class="system-parent" role="article">
+            <div class="system-hero system-portfolio-item system-picture-item" data-bg="/works/mindoverbody/hero.png" role="img" aria-label="The logo for Mind Over Body."></div>
+            <div class="article-text">
+                <h2>Branding for <strong>Mind Over Body</strong>, an organisation focused on helping people with negative perceptions of their body image through hosting talks and support groups.</h2>
+            </div>
+            <div class="system-twofigs">
+                <figure>
+                    <div class="system-figure system-picture-item" data-bg="/works/mindoverbody/figure_font.png" role="img" aria-label=Illustration of the customised typeface made to complement the logo, with the modified characters highlighted."></div>
+                    <figcaption role="text">A custom version of the typeface to match the new logo was made for eye-catching headlines.</figcaption>
+                </figure>
+                <figure>
+                    <div class="system-figure system-picture-item" data-bg="/works/mindoverbody/figure_proposals.png" role="img" aria-label="Other designs which were proposed for the final logo."></div>
+                    <figcaption role="text">Other proposed designs, including variants of the final logo.</figcaption>
+                </figure>
+            </div>
+        </div>
+        <h5 class="copyright-footer">This website &bull; Copyright &copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Adam Gethin</h5>
+    </div>
+    <!-- Change background image of sections depending on the data -->
+    <script>
+        document.querySelectorAll('.system-picture-item').forEach((item) => {
+            if (item.dataset.bg) {
+                item.style.backgroundImage = "url('" + item.dataset.bg + "')";
+            }
+        })
+    </script>
+</body>
+</html>

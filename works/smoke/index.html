@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="20 days">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/touchicon.png"/>
+    <!-- Titles -->
+    <title>Smoke • Adam Gethin</title>
+    <meta name="twitter:title" content="Smoke • Adam Gethin">
+    <meta property="og:site_name" content="Adam Gethin" />
+    <meta property="og:title" content="Smoke" />
+    <!-- URL -->
+    <meta property="og:url" content="https://adamgethin.com/works/smoke" />
+    <!-- Thumbnail -->
+    <meta property="og:image" content="https://adamgethin.com/works/smoke/cover.png" />
+    <meta name="twitter:image" content="https://adamgethin.com/works/smoke/cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="The name of the typeface written in the typeface, with smoke partly obscuring it.">
+    <!-- Description -->
+    <meta name="twitter:description" content="Smoke is a single all-caps font, somewhat inspired by an unreleased typeface by Herb Lubalin.">
+    <meta name="description" content="Smoke is a single all-caps font, somewhat inspired by an unreleased typeface by Herb Lubalin.">
+    <!-- Type -->
+    <meta name="twitter:site" content="@adamgethin">
+    <meta name="twitter:creator" content="@adamgethin">
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="keywords" content="adam gethin, web design, design, web development, UI design" />
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "CreativeWork",
+            "creator": "Adam Gethin",
+            "image": "/works/smoke/cover.png",
+            "name": "Smoke typeface"
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="button" role="button" title="Go back">&larr; Go back</a>
+        <div class="system-parent" role="article">
+
+            <div class="system-hero system-portfolio-item system-picture-item" data-bg="/works/smoke/hero.jpg" role="img" aria-label="The word 'Smoke' written in the typeface, with smoke partly obscuring it."></div>
+            <div class="article-text">
+                <h2><strong>Smoke</strong> is a single all-caps font, somewhat inspired by an unreleased typeface by Herb Lubalin.</h2>
+                <p>As there are very few publicly-available specimens, I made this as a way of teaching myself how to use <a href="https://glyphsapp.com">Glyphs</a>. This typeface will not be released.</p>
+            </div>
+
+            <div class="system-twofigs">
+                <figure>
+                    <div class="system-figure system-picture-item" data-bg="/works/smoke/figure_ligsalts.png" role="img" aria-label="Various words written in the typeface featuring some of the ligatures and stylistic alternatives."></div>
+                    <figcaption role="text">I added quite a few Lubalin-inspired stylistic ligatures as well as some stylistic alternatives.</figcaption>
+                </figure>
+                <figure>
+                    <div class="system-figure system-picture-item" data-bg="/works/smoke/figure_accents.png" role="img" aria-label="The alphabet written in the typeface showing most of the diacritics and European language characters."></div>
+                    <figcaption role="text"><em>Smoke</em> also supports quite a few diacritics and other European language characters such as the thorn (Þ), eth (Ð), and the Dutch &ldquo;ij&rdquo; digraph.</figcaption>
+                </figure>
+            </div>
+
+        </div>
+        <h5 class="copyright-footer">This website &bull; Copyright &copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Adam Gethin.</h5>
+    </div>
+    <!-- Change background image of sections depending on the data -->
+    <script>
+        document.querySelectorAll('.system-picture-item').forEach((item) => {
+            if (item.dataset.bg) {
+                item.style.backgroundImage = "url('" + item.dataset.bg + "')";
+            }
+        })
+    </script>
+</body>
+</html>

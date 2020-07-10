@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="20 days">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/touchicon.png"/>
+    <!-- Titles -->
+    <title>Adam Gethin • Portfolio</title>
+    <meta name="twitter:title" content="Adam Gethin • Portfolio">
+    <meta property="og:site_name" content="Adam Gethin" />
+    <meta property="og:title" content="Portfolio" />
+    <!-- URL -->
+    <meta property="og:url" content="https://adamgethin.com/" />
+    <!-- Thumbnail -->
+    <meta property="og:image" content="https://adamgethin.com/thumbnail.png" />
+    <meta name="twitter:image" content="https://adamgethin.com/thumbnail.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Adam Gethin logo">
+    <!-- Description -->
+    <meta name="twitter:description" content="Adam Gethin is a designer based in the West Midlands.">
+    <meta name="description" content="Adam Gethin is a designer based in the West Midlands.">
+    <!-- Type -->
+    <meta name="twitter:site" content="@adamgethin">
+    <meta name="twitter:creator" content="@adamgethin">
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="keywords" content="adam gethin, graphic design, logo, web design, design, front end web, UI design" />
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "Person",
+            "name": "Adam Gethin",
+            "url": "https://adamgethin.com"
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div role="main" class="system-parent">
+            <!-- Heading -->
+            <div role="heading" class="system-two system-two-text home-blurb">
+                <span class="line-one" role="text"><h1>Adam Gethin</h1> <h2>is a designer <span class="breaker"></span>based in the West Midlands.</h2></span>
+                <span class="line-two"><span class="indicator-green"></span> <h2><strong>Available for work.</strong> <span class="breaker"></span><a href="/contact.html">Contact me here</a>.</h2></span>
+            </div>
+            <!-- Items -->
+            <div class="system-two system-portfolio-item system-picture-item" data-bg="/works/mindoverbody/cover.png" aria-label="Mind Over Body">
+                <a href="/works/mindoverbody" class="clickwrap" title="Logo design for Mind Over Body">
+                    <span class="portfolio-label" aria-hidden="true">Logo design</span>
+                </a>
+            </div>
+            <div class="system-two system-portfolio-item system-picture-item" data-bg="/works/lgbtqguyana/cover.png" aria-label="Guyana LGBTQ Coalition">
+                <a href="/works/lgbtqguyana" class="clickwrap" title="Logo design for Guyana LGBTQ Coalition">
+                    <span class="portfolio-label" aria-hidden="true">Logo design</span>
+                </a>
+            </div>
+            <div class="system-two system-portfolio-item system-picture-item" data-bg="/works/honkbot/cover.jpg" aria-label="Honk chat bot">
+                <a href="/works/honkbot" class="clickwrap" title="Honk chatbot development">
+                    <span class="portfolio-label" aria-hidden="true">Development</span>
+                </a>
+            </div>
+            <div class="system-two system-portfolio-item system-picture-item" data-bg="/works/nimble/cover.png" aria-label="Maybulb and Nimble">
+                <a href="/works/nimble" class="clickwrap" title="Branding and UI design for Nimble and Maybulb">
+                    <span class="portfolio-label" aria-hidden="true">Web, UI, and logo design</span>
+                </a>
+            </div>
+            <div class="system-two system-portfolio-item system-picture-item" data-bg="/works/smoke/cover.jpg" aria-label="Smoke typeface">
+                <a href="/works/smoke" class="clickwrap" title="Smoke typeface">
+                    <span class="portfolio-label" aria-hidden="true">Typeface</span>
+                </a>
+            </div>
+        </div>
+        <h5 class="copyright-footer">This website &bull; Copyright &copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Adam Gethin</h5>
+    </div>
+    <!-- Change background image of sections depending on the data -->
+    <script>
+        document.querySelectorAll('.system-picture-item').forEach((item) => {
+            if (item.dataset.bg) {
+                item.style.backgroundImage = "url('" + item.dataset.bg + "')";
+            }
+        })
+    </script>
+</body>
+</html>

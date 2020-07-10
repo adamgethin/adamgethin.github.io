@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="20 days">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/touchicon.png"/>
+    <!-- Titles -->
+    <title>Page not found • Adam Gethin</title>
+    <meta name="twitter:title" content="Page not found • Adam Gethin">
+    <meta property="og:site_name" content="Adam Gethin" />
+    <meta property="og:title" content="Page not found" />
+    <!-- URL -->
+    <meta property="og:url" content="https://adamgethin.com/" />
+    <!-- Thumbnail -->
+    <meta property="og:image" content="https://adamgethin.com/thumbnail.png" />
+    <meta name="twitter:image" content="https://adamgethin.com/thumbnail.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Page not found">
+    <!-- Description -->
+    <meta name="twitter:description" content="Page not found.">
+    <meta name="description" content="Page not found.">
+    <!-- Type -->
+    <meta name="twitter:site" content="@adamgethin">
+    <meta name="twitter:creator" content="@adamgethin">
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="keywords" content="adam gethin, graphic design, logo, web design, design, front end web, UI design" />
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "WebPage",
+            "name": "Page not found",
+            "url": "https://adamgethin.com/404.html"
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="system-parent">
+            <!-- Heading -->
+            <div role="region" class="system-two system-two-text home-blurb">
+                <span class="line-one"><h1>Page not found.</h1></span>
+                <span class="line-two"><h2>Have you tried checking the link?</h2></span>
+                <span class="line-two"><a href="/" class="button" role="button" title="Go back">&larr; Go back</a></span>
+            </div>
+        </div>
+        <h5 class="copyright-footer">This website &bull; Copyright &copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Adam Gethin</h5>
+    </div>
+    <!-- Change background image of sections depending on the data -->
+    <script>
+        document.querySelectorAll('.system-picture-item').forEach((item) => {
+            if (item.dataset.bg) {
+                item.style.backgroundImage = "url('" + item.dataset.bg + "')";
+            }
+        })
+    </script>
+</body>
+</html>

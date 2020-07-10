@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="20 days">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/touchicon.png"/>
+    <!-- Titles -->
+    <title>Honk • Adam Gethin</title>
+    <meta name="twitter:title" content="Honk • Adam Gethin">
+    <meta property="og:site_name" content="Adam Gethin" />
+    <meta property="og:title" content="Honk" />
+    <!-- URL -->
+    <meta property="og:url" content="https://adamgethin.com/works/honkbot" />
+    <!-- Thumbnail -->
+    <meta property="og:image" content="https://adamgethin.com/works/honkbot/cover.png" />
+    <meta name="twitter:image" content="https://adamgethin.com/works/honkbot/cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Illustration of speech bubbles showing different icons.">
+    <!-- Description -->
+    <meta name="twitter:description" content="Honk is a Telegram bot written in Node.js.">
+    <meta name="description" content="Honk is a Telegram bot written in Node.js.">
+    <!-- Type -->
+    <meta name="twitter:site" content="@adamgethin">
+    <meta name="twitter:creator" content="@adamgethin">
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="keywords" content="adam gethin, web design, design, web development, UI design" />
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "CreativeWork",
+            "creator": "Adam Gethin",
+            "image": "/works/honkbot/cover.png",
+            "name": "Honk chat bot"
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="button" role="button" title="Go back">&larr; Go back</a>
+        <div class="system-parent" role="article">
+            <div class="system-hero system-portfolio-item system-picture-item" data-bg="/works/honkbot/hero.jpg" role="img" aria-label="Illustration of speech bubbles showing different icons."></div>
+            <div class="article-text">
+                <h2><strong>Honk</strong> is a Telegram bot written in Node.js.</h2>
+                <p>I wrote this bot for my group chat in order to learn Node.js and JavaScript. I plan on making it easier to configure and releasing it publicly in the future.</p>
+            </div>
+            <div class="system-twofigs">
+                <figure>
+                    <div class="system-figure system-picture-item" data-bg="/works/honkbot/figure_music.png" role="img" aria-label="A text message conversation showing what music Adam is listening to right now as well as the most played song this week."></div>
+                    <figcaption role="text">With the group member&rsquo;s permission, the bot can retrieve what they&rsquo;re listening to right now, as well as the music they&rsquo;ve been listening to over the past week.</figcaption>
+                </figure>
+                <figure>
+                    <div class="system-figure system-picture-item" data-bg="/works/honkbot/figure_weather.png" role="img" aria-label="A text message conversation showing what the current weather is as well as the date and time for a specific place."></div>
+                    <figcaption role="text">Since the group chat has people who live around the world, it can quickly show information about the time in different locations, the weather for any location, and also convert between different units.</figcaption>
+                </figure>
+            </div>
+        </div>
+        <h5 class="copyright-footer">This website &bull; Copyright &copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Adam Gethin</h5>
+    </div>
+    <!-- Change background image of sections depending on the data -->
+    <script>
+        document.querySelectorAll('.system-picture-item').forEach((item) => {
+            if (item.dataset.bg) {
+                item.style.backgroundImage = "url('" + item.dataset.bg + "')";
+            }
+        })
+    </script>
+</body>
+</html>
